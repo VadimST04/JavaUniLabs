@@ -31,13 +31,13 @@ public class Lab2 {
 
     public static void secondWay() {
         // This is a prettier way, to my mind
-        String output = "";
+        StringBuilder output = new StringBuilder();
         System.out.print("Enter any line: ");
         String[] letters = scanner.nextLine().toLowerCase().split("");
         Arrays.sort(letters);
         for (String letter:letters) {
-            output += letter;
+            output.append(letter);
         }
-        System.out.println(output.trim());
+        System.out.println(output.toString().trim());
     }
 }
